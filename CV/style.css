@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: white;
+    font-weight: 400;
+    background-color: rgb(4, 8, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.block {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1000px;
+    display: grid;
+    margin: 45px;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.block .left_block {
+    background-color: rgb(4, 26, 54);
+    position: relative;
+    padding: 40px;
+
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid white
+}
+
+.profile .profile_image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .profile_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    font-size: 1.7em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.0em;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.profile h3 {
+    font-size: 1.0em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 0.1em;
+    color: white;
+}
+
+.contactDetails {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid white;
+}
+
+.contactDetails .title {
+    padding-top: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(182, 50, 78);
+}
+
+.contactDetails ul {
+    position: relative;
+}
+
+.contactDetails ul li {
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.contactDetails ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(182, 50, 78);
+}
+
+.contactDetails ul li span {
+    color: white
+}
+
+.contactDetails ul li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.contactDetails ul li a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.contactDetails ul li a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contactDetails ul li a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.education {
+    padding-top: 20px;
+
+}
+
+.education .title {
+
+    padding-top: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(182, 50, 78);
+}
+
+.education ul {
+    position: relative;
+
+}
+
+.education ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.education ul li h4 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.education ul li h5 {
+    color: white;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.block .right_block {
+    background-color: rgb(17, 14, 14);
+    position: relative;
+    padding: 40px;
+}
+
+.about {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    border-bottom: 2px solid rgb(66, 65, 65);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(182, 50, 78);
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.pskills .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: lightblue;
+    display: block;
+    margin-top: 5px;
+}
+
+.pskills .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(182, 50, 78);
+}
+
+.pskills ul {
+    position: relative;
+
+}
+
+.pskills ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.achievements {
+    padding-top: 20px;
+}
+
+.achievements ul {
+    position: relative;
+}
+
+.achievements ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.achievements ul li h4 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.achievements ul li h5 {
+    color: white;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .block {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
